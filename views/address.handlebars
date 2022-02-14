@@ -1,0 +1,28 @@
+<div class="card mt-3">
+    <div class="card-header">
+        Address info
+    </div>
+
+    <div class="card-body">
+        <ul class="list-group">
+            <li class="list-group-item">
+                <strong>Address: </strong> {{ address }}
+            </li>
+            <li class="list-group-item">
+                <strong>Balance: </strong> {{ balance }} ETH
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="card mt-3">
+    <div class="card-body">
+        <form method="post" action="/send">
+            <div class="mb-3">
+                <input type="text" name="address" placeholder="address" class="form-control" id="address">
+                <input type="text" name="amount" placeholder="amount" class="form-control mt-2" id="amount">
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+</div>

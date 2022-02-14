@@ -1,0 +1,19 @@
+<div class="card mt-3">
+    <div class="card-header">
+        Generate address from mnemonic passphrase
+    </div>
+    <div class="card-body">
+        <form method="post" action="/generate">
+            <div class="mb-3">
+                <div class="mt-1 mb-2">
+                    <strong>Phrase: </strong>
+                    <input type="text" class="form-control" disabled value="{{ phrase }}" />
+                </div>
+
+                <a href="/" class="btn btn-sm btn-warning mb-2">Regenerate phrase</a>
+                <input type="text" name="phrase" placeholder="Put phrase here..." class="form-control" id="phrasses">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
